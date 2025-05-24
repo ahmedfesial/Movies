@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Layout from './Components/Layout/Layout'
 import MovieDetails from './Components/movieDetails/movieDetails'
-import Search from './Components/Search/Search'
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
     {path : '' , element : <Layout/> , children : [
       {path : '' , element : <Home/>},
       {path : 'MovieDetails/:movieId' , element : <MovieDetails/>},
-      {path: 'Search' , element : <Search/>}
     ]}
   ])
 
